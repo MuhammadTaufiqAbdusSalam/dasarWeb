@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.ktp-taufiq {
+    width: 690px;
+    margin: 50px auto;
+    background-color: #3eb9cf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ktp-photo {
+    width: 140px;
+    height: 170px;
+    margin: 20px;
+    border-radius: 5px;
+    float: right; 
+}
+
+.ktp-header {
+    color: #000000;
+    padding: 3px;
+    text-align: center;
+}
+
+.ktp-header h1 {
+    margin: 0;
+}
+
+.ktp-info {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.ktp-info-item {
+    margin-bottom: 1px;
+}
+
+.ktp-info-label {
+    font-weight: bold;
+}
+
+.ktp-info-item span {
+    display: inline-block;
+    width: 150px;
+}
+
+.photo-caption {
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+}
