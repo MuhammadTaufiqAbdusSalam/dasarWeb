@@ -1,4 +1,6 @@
 <?php
+/*Praktikum 2 : Penggunaan Tipe Data. Langkah2
+ */
     $a = 10;
     $b = 5;
     $c = $a + 5;
@@ -12,7 +14,8 @@
     echo "Variabel e: {$e} <br>";
 
     var_dump($e);
-
+/*Praktikum 2 : Penggunaan Tipe Data. Langkah5
+ */
     $nilaiMatematika = 5.1;
     $nilaiIPA = 6.7;
     $nilaiBahasaIndonesia = 9.3;
@@ -25,14 +28,16 @@
     echo "Rata-rata {$rataRata} <br>";
 
     var_dump($rataRata);
-
+/*Praktikum 2 : Penggunaan Tipe Data. Langkah7
+ */
     $apakahSiswaLulus = true;
     $apakahsiswaSudahUjian = false;
 
     var_dump($apakahSiswaLulus);
     echo "<br>";
     var_dump($apakahsiswaSudahUjian);
-
+/*Praktikum 2 : Penggunaan Tipe Data. Langkah10
+ */
     $namaDepan = "Ibnu";
     $namaBelakang = "Jakaria";
 
@@ -43,7 +48,8 @@
     echo "Nama Belakang: {$namaBelakang} <br>";
 
     echo $namaLengkap;
-    
+/*Praktikum 2 : Penggunaan Tipe Data. Langkah13
+ */
     $listMahasiwa = ["Wahid Abdullah", "Elmo bachtiar", "Lendis Fabri"];
     echo $listMahasiwa[0];
 ?>
