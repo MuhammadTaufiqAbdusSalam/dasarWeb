@@ -12,7 +12,6 @@
     echo "Variabel e: {$e} <br>";
 
     var_dump($e);
-    echo "<br><br>";
 
     $nilaiMatematika = 5.1;
     $nilaiIPA = 6.7;
