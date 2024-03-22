@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--kode program ini menciptakan sebuah accordion yang terdiri dari beberapa 
+        bagian dengan judul-judul yang dapat diklik untuk menampilkan atau 
+        menyembunyikan konten-konten yang terdapat di dalamnya-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jquery-ui-1.13.2/jquery-ui.css">
+    <script src="../jquery-3.7.1.js"></script>
+    <script src="./jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#Query_accordion").accordion();
+        });
+    </script>
+</head>
+<body>
+    <div id="jQuery_accordion"></div>
+    <h3>header 1</h3>
+    <p>This is section 1.
+    Place your content here in paragraphs or use div elements etc.</p>
+    <h3>header 2</h3>
+    <p>
+       this is section 2. you can also include images like this:
+       <br> <img src="../3.jpeg" alt=""> 
+    </p>
+    <h3>header 3</h3>
+    <div>
+        <p>This is section 3. Content can include listing as well
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+        </p>
+    </div>
+</body>
+</html>

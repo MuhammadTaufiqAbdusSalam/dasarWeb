@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--kode program ini menciptakan sebuah input teks di mana pengguna dapat 
+    memilih tanggal menggunakan kalender interaktif yang disediakan oleh datepicker 
+    dari jQuery UI.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./jquery-ui-1.13.2/jquery-ui.css" />
+    <script src="../jquery-3.7.1.js"></script>
+    <script src="./jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#date_ex").datepicker();
+      });
+    </script>
+  </head>
+  <body>
+    <div>selected Date: <input type="text" id="date_ex" /></div>
+  </body>
+</html>

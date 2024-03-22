@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <!--kode program ini memberikan interaktivitas pada paragraf, 
+    di mana warna teks, warna latar belakang, 
+    dan border paragraf akan berubah sesuai dengan inputan pengguna.-->
+  <head>
+    <style>
+      #paragraf {
+        width: 600px;
+        height: 80px;
+        background-color: pink;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#paragraf").click(function () {
+          $("#paragraf").css("color", "white");
+        });
+        $("#paragraf").mouseover(function () {
+          $("#paragraf").css("background-color", "silver");
+        });
+        $("#paragraf").mouseout(function () {
+          $("#paragraf").css("background-color", "blue");
+        });
+        $("#paragraf").dblclick(function () {
+          $("#paragraf").css("border", "solid 3px black");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="paragraf">praktikum minggu ke 4 jquery</p>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Kode program ini digunakan untuk memulai serangkaian animasi pada elemen "box" saat tombol 
+    "Start Animation" diklik. Animasi tersebut mengubah ukuran, posisi, 
+    ketebalan border, dan opacity elemen secara bertahap-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylePrak7.css" type="text/css" />
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".box")
+            .animate({ width: "300px" })
+            .animate({ height: "300px" })
+            .animate({ marginLeft: "150px" })
+            .animate({ borderWidth: "10px" })
+            .animate({ opacity: 0.5 });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button">Start Animation</button>
+    <div class="box"></div>
+  </body>
+</html>

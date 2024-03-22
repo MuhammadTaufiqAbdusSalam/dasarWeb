@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--kode program ini memberikan efek slider sederhana untuk menampilkan 
+    gambar-gambar secara otomatis dengan efek fade in dan fade out.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylePrak10.css" type="text/css" />
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+      var i = 0;
+      $(document).ready(function () {
+        $(".slidetitle, #slider img").hide();
+        showNextImage();
+        setInterval("showNextImage()", 3000);
+      });
+
+      function showNextImage() {
+        i++;
+        $("#sliderImage" + i)
+          .appendTo("#slider")
+          .fadeIn(1100)
+          .delay(1100)
+          .fadeOut(1100);
+        $("#title" + i)
+          .appendTo("#slider")
+          .fadeIn(1100)
+          .delay(1100)
+          .fadeOut(1100);
+        if (i == 3) {
+          i = 0;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="slider">
+      <img id="sliderImage1" src="1.jpeg" sizes="300px" alt="" />
+      <div class="slidertitle" id="title1">Gambar1</div>
+
+      <img id="sliderImage2" src="2.jpeg" alt="" sizes="300px" />
+      <div class="slidertitle" id="title2">Gambar2</div>
+
+      <img id="sliderImage3" src="3.jpeg" alt="" sizes="300px" />
+      <div class="slidertitle" id="title3">Gambar 3</div>
+    </div>
+  </body>
+</html>
