@@ -1,0 +1,11 @@
+/* Warna latar belakang navbar menjadi hitam */
+.navbar {
+    background-color: #1b1c1e !important; 
+    color: #fff; 
+}
+
+/* Teks di dalam jumbotron menjadi biru */
+.jumbotron {
+    background-color: #c5c8cc; 
+    color: hsl(239, 65%, 23%); 
+}
