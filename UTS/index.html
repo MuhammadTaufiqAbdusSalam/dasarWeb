@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemesanan Tiket Kereta Api</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Pemesanan Tiket Kereta Api</h2>
+<form id="bookingForm" action="process.php" method="post"> <!-- Form untuk melakukan pemesanan -->
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required style="display: none;"><br><br>
+    <label for="tujuan">Tujuan:</label>
+                <select id="tujuan" name="tujuan"style="display: none;">
+                    <option value="Jakarta - Malang"><h3>Jakarta - Malang</h3></option>
+                    <option value="Malang - Surabaya"><h3>Malang - Surabaya</h3></option>
+                    <option value="Mojoterto - Ponorogo"><h3>Mojokerto - Ponorogo</h3></option>
+                </select><br><br>
+    <label for="tanggal">Tanggal:</label>
+    <input type="date" id="tanggal" name="tanggal" required style="display: none;"><br><br>
+    <input type="submit" value="Pesan Tiket">
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#nama').fadeIn(1000);
+        $('#tanggal').fadeIn(1000);
+        $('#tujuan').fadeIn(1000);
+    });
+</script>
+<script src="script.js"></script> <!-- Memuat script JavaScript -->
+</body>
+</html>
